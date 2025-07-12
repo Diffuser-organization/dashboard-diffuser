@@ -15,10 +15,10 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex h-full items-center justify-center bg-gray-100">
+    <div className="flex h-full items-center justify-center bg-content2">
       <div className="container mx-auto max-w-7xl md:h-4/5 flex-grow flex h-full w-full shadow-lg">
         {/* Lado izquierdo */}
-        <div className="flex flex-1 items-center justify-center p-3 bg-white">
+        <div className="flex flex-1 items-center justify-center p-3 bg-content1">
           <div className="flex w-full max-w-sm flex-col gap-4 rounded-large">
             <div className="flex flex-col items-left">
               <p className="text-2xl font-medium">Registrarse</p>
@@ -118,6 +118,7 @@ export default function LoginPage() {
             </div> */}
             <div className="flex flex-col gap-2">
               <Button
+                className="bg-white text-default"
                 //startContent={<Icon icon="flat-color-icons:google" width={24} />}
                 radius="sm"
                 size="lg"
