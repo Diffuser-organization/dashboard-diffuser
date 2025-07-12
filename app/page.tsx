@@ -1,5 +1,5 @@
 import { title, subtitle } from "@/components/primitives";
-import { LoginButton } from "@/components/LoginButton";
+import { LoginButton } from "@/components/login-button";
 
 export default function Home() {
   return (
