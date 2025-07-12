@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Button, Input, Link, Form } from "@heroui/react";
+import {Button, Input, Link, Form} from "@heroui/react";
 import Image from "next/image";
 
 export default function LoginPage() {
@@ -21,13 +21,24 @@ export default function LoginPage() {
         <div className="flex flex-1 items-center justify-center p-3 bg-white">
           <div className="flex w-full max-w-sm flex-col gap-4 rounded-large">
             <div className="flex flex-col items-left">
-              <p className="text-2xl font-medium">Iniciar Sesión</p>
+              <p className="text-2xl font-medium">Registrarse</p>
             </div>
             <Form
               className="flex flex-col gap-3"
               validationBehavior="native"
               onSubmit={handleSubmit}
             >
+              <Input
+                isRequired
+                label="Nombre de Usuario"
+                labelPlacement="outside"
+                name="username"
+                placeholder=""
+                radius="sm"
+                size="lg"
+                type="text"
+                variant="bordered"
+              />
               <Input
                 isRequired
                 label="Email"
@@ -65,6 +76,31 @@ export default function LoginPage() {
                 type={isVisible ? "text" : "password"}
                 variant="bordered"
               />
+              <Input
+                isRequired
+                // endContent={
+                //   <button type="button" onClick={toggleVisibility}>
+                //     {isVisible ? (
+                //       <Icon
+                //         className="pointer-events-none text-2xl text-default-400"
+                //         icon="solar:eye-closed-linear"
+                //       />
+                //     ) : (
+                //       <Icon
+                //         className="pointer-events-none text-2xl text-default-400"
+                //         icon="solar:eye-bold"
+                //       />
+                //     )}
+                //   </button>
+                // }
+                label="Repetir Contraseña"
+                labelPlacement="outside"
+                name="repeatPassword"
+                radius="sm"
+                size="lg"
+                type={isVisible ? "text" : "password"}
+                variant="bordered"
+              />
               <Button
                 className="w-full"
                 color="primary"
@@ -72,7 +108,7 @@ export default function LoginPage() {
                 size="lg"
                 type="submit"
               >
-                Iniciar Sesión
+                Registrarse
               </Button>
             </Form>
             {/* <div className="flex items-center gap-4 py-2">
@@ -90,14 +126,11 @@ export default function LoginPage() {
                 Continuar con Google
               </Button>
             </div>
-            <div className="flex flex-col md:flex-row w-full items-center justify-between px-1 py-2">
-              <Link className="pb-5 md:pb-0" href="#" size="sm">
-                Olvidé mi contraseña
-              </Link>
+            <div className="flex w-full justify-center px-1 py-2">
               <p className="text-small">
-                ¿No tenés cuenta?&nbsp;
-                <Link href="/register" size="sm">
-                  Registrarse
+                ¿Ya tenés cuenta?&nbsp;
+                <Link href="/login" size="sm">
+                  Iniciar Sesión
                 </Link>
               </p>
             </div>
