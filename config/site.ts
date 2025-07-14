@@ -1,28 +1,25 @@
+import { HomeIcon, ListIcon, StatisticsIcon } from "@/components/icons";
+
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
+  name: "Diffuser",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
       label: "Home",
-      href: "/",
+      href: "/dashboard",
+      icon: HomeIcon,
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Códigos Difundidos",
+      href: "/diffused-codes",
+      icon: ListIcon,
     },
     {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
+      label: "Estadísticas",
+      href: "/statistics",
+      icon: StatisticsIcon,
     },
   ],
   navMenuItems: [
@@ -60,10 +57,6 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://github.com",
   },
 };

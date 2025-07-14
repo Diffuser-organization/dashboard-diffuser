@@ -1,8 +1,11 @@
 import Image from "next/image";
 
+import { ThemeSwitch } from "@/components/theme-switch";
+
 export const LoginLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex h-full items-center justify-center bg-content2">
+      <ThemeSwitch className="fixed top-5 right-5" />
       <div className="container mx-auto max-w-7xl md:h-4/5 flex-grow flex h-full w-full shadow-lg">
         {/* Lado izquierdo */}
         <div className="flex flex-1 items-center justify-center p-3 bg-content1">

@@ -1,4 +1,5 @@
-import { Navbar } from "@/components/navbar";
+import { Sidebar } from "@/components/sidebar";
+import { ThemeSwitch } from "@/components/theme-switch";
 
 export default function DocsLayout({
   children,
@@ -6,11 +7,12 @@ export default function DocsLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <Navbar />
-      <div className="inline-block max-w-lg text-center justify-center">
+    <div className="flex flex-col items-center justify-center">
+      <Sidebar />
+      <section className="inline-block max-w-lg text-center justify-center sm:ml-64">
         {children}
-      </div>
-    </section>
+      </section>
+      <ThemeSwitch className="hidden sm:block fixed top-5 right-5" />
+    </div>
   );
 }
