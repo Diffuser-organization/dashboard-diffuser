@@ -3,7 +3,7 @@
 import React from "react";
 import { Button, Input, Link, Form } from "@heroui/react";
 
-import { LoginLayout } from "../../layouts/login-layout";
+import { LoginLayout } from "../../components/layouts/login-layout";
 
 import { GoogleIcon } from "@/components/icons";
 import { PasswordInput } from "@/components/password";
