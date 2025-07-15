@@ -43,7 +43,6 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "system" }}>
           <div className="relative flex flex-col h-screen">
-            <ThemeSwitch className="fixed top-5 right-5" />
             <main className="mx-auto w-full flex-grow">{children}</main>
             {/* <footer className="w-full flex items-center justify-center py-3">
               <Link
