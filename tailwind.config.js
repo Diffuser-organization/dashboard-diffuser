@@ -13,6 +13,10 @@ const config = {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
       },
+      backgroundImage: {
+        "hero-section-title":
+          "linear-gradient(91deg, #FFF 32.88%, rgba(255, 255, 255, 0.40) 99.12%)",
+      },
     },
   },
   darkMode: "class",
@@ -45,6 +49,7 @@ const config = {
         },
         // ... custom themes
       },
+      
     }),
   ],
 };
