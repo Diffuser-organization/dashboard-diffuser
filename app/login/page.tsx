@@ -9,7 +9,6 @@ import { GoogleIcon } from "@/components/icons";
 import { PasswordInput } from "@/components/password";
 
 export default function LoginPage() {
-
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log("handleSubmit");
